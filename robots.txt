@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fazaiia.com.br/sitemap.xml
