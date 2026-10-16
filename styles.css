@@ -391,6 +391,97 @@ section {
   font-size: 15px;
 }
 
+.service-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
+
+/* Automações na prática */
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.auto-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease;
+}
+
+.auto-card:hover {
+  border-color: var(--accent-2);
+}
+
+.auto-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.auto-card p {
+  color: var(--text-dim);
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.auto-example {
+  margin-top: auto;
+  border-left: 2px solid var(--accent);
+  padding: 4px 0 4px 14px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.auto-example span {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.auto-note {
+  margin-top: 40px;
+  padding: 28px 32px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.auto-note p {
+  color: var(--text-dim);
+  max-width: 560px;
+  font-size: 15px;
+}
+
+.auto-note strong {
+  color: var(--text);
+}
+
+.auto-note-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 /* Why it works */
 .stats-grid {
   display: grid;
