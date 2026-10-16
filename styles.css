@@ -482,6 +482,52 @@ section {
   flex-wrap: wrap;
 }
 
+.auto-tabs {
+  display: none;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.js-tabs .auto-tabs {
+  display: flex;
+}
+
+.auto-tab {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.auto-tab:hover {
+  color: var(--text);
+}
+
+.auto-tab.is-active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.auto-card.is-hidden {
+  display: none;
+}
+
+.auto-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin-bottom: 6px;
+}
+
 /* Why it works */
 .stats-grid {
   display: grid;
